@@ -52,10 +52,16 @@ public class OrderUI
         }
     }
 
-    private void CreateOrderUI()
+    internal void CreateOrderUI()
     {
         Console.Write("\n Podaj nazwe produktu: ");
         string productName = Console.ReadLine();
+
+        if (string.IsNullOrWhiteSpace(productName))
+        {
+            Console.WriteLine(" Blad: niepoprawna nazwa.");
+            return;
+        }
 
         Console.Write("Podaj kwote zamowienia: ");
         if (!decimal.TryParse(Console.ReadLine(), out decimal amount))
@@ -75,18 +81,24 @@ public class OrderUI
         Console.Write("Podaj adres dostawy: ");
         string shippingAddress = Console.ReadLine();
 
+        if (string.IsNullOrWhiteSpace(shippingAddress))
+        {
+            Console.WriteLine(" Blad: niepoprawny adres dostawy.");
+            return;
+        }
+
         Console.Write("Metoda platnosci (1 = Karta, 2 = Gotowka przy odbiorze): ");
         if (!int.TryParse(Console.ReadLine(), out int paymentMethodInput) || (paymentMethodInput < 1 || paymentMethodInput > 2))
         {
-            Console.WriteLine(" Blad: niepoprawna metoda płatnosci.");
+            Console.WriteLine(" Blad: niepoprawna metoda platnosci.");
             return;
         }
         var paymentMethod = (PaymentMethod)(paymentMethodInput - 1);
 
         _orderService.CreateOrder(productName, amount, customerType, shippingAddress, paymentMethod);
-        Console.WriteLine($"Zamowienie zostalo utworzone.");
+        Console.WriteLine("Zamowienie zostalo utworzone.");
     }
-    private void MoveToWarehouseUI()
+    internal void MoveToWarehouseUI()
     {
         Console.Write("\n Podaj ID zamowienia do magazynu: ");
         if (!int.TryParse(Console.ReadLine(), out int orderId))
@@ -98,7 +110,7 @@ public class OrderUI
         _orderService.MoveToWarehouse(orderId);
     }
 
-    private void MoveToShippingUI()
+    internal void MoveToShippingUI()
     {
         Console.Write("\nPodaj ID zamowienia do wysylki: ");
         if (!int.TryParse(Console.ReadLine(), out int orderId))
@@ -110,7 +122,7 @@ public class OrderUI
         _orderService.MoveToShipping(orderId);
     }
     
-    private void RemoveOrderUI()
+    internal void RemoveOrderUI()
     {
         Console.Write("\n Podaj ID zamowienia do usuniecia: ");
         if (!int.TryParse(Console.ReadLine(), out int orderId))

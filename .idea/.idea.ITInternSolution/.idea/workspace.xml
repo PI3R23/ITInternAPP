@@ -9,20 +9,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4673eee2-b03a-4ac8-b726-cca221d1b6f2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ITInternSolution/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ITInternSolution/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ITInternAPP.Tests/ITInternAPP.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/ITInternAPP.Tests/ITInternAPP.Tests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ITInternAPP.Tests/UnitTest1.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ITInternAPP.Tests/obj/Debug/net9.0/ITInternAPP.Tests.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ITInternAPP.Tests/obj/Debug/net9.0/ITInternAPP.Tests.AssemblyInfo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ITInternAPP.Tests/obj/Debug/net9.0/ITInternAPP.Tests.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ITInternAPP.Tests/obj/Debug/net9.0/ITInternAPP.Tests.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ITInternAPP.Tests/obj/Debug/net9.0/ITInternAPP.Tests.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ITInternAPP.Tests/obj/Debug/net9.0/ITInternAPP.Tests.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ITInternAPP.Tests/obj/Debug/net9.0/ITInternAPP.Tests.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ITInternAPP.Tests/obj/Debug/net9.0/ITInternAPP.Tests.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ITInternAPP.Tests/obj/ITInternAPP.Tests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ITInternAPP.Tests/obj/ITInternAPP.Tests.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ITInternAPP.Tests/obj/ITInternAPP.Tests.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/ITInternAPP.Tests/obj/ITInternAPP.Tests.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ITInternAPP.Tests/obj/ITInternAPP.Tests.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/ITInternAPP.Tests/obj/ITInternAPP.Tests.csproj.nuget.g.targets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ITInternAPP.Tests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/ITInternAPP.Tests/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ITInternAPP.Tests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/ITInternAPP.Tests/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ITInternAPP.Tests/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/ITInternAPP.Tests/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ITInternAPP.Tests/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/ITInternAPP.Tests/obj/rider.project.model.nuget.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ITInternAPP.Tests/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/ITInternAPP.Tests/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ITInternAPP.Tests/OrderServiceTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ITInternAPP.Tests/Services/OrderServiceTests.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ITInternAPP/UI/OrderUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ITInternAPP/UI/OrderUI.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,12 +36,13 @@
     &quot;.NET Project.ITInternAPP.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -88,6 +77,10 @@
       <workItem from="1742247303471" duration="1142000" />
       <workItem from="1742248555024" duration="775000" />
       <workItem from="1742249355463" duration="510000" />
+      <workItem from="1742298128293" duration="2368000" />
+      <workItem from="1742300533529" duration="1537000" />
+      <workItem from="1742308910610" duration="357000" />
+      <workItem from="1742316548196" duration="2803000" />
     </task>
     <servers />
   </component>
@@ -97,5 +90,17 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="DotNet Exception Breakpoints">
+          <properties exception="Moq.MockException" isInternal="false" displayValue="MockException" namespaceName="Moq">
+            <option name="internal" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
